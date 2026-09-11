@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="十個取自真實案例的詐騙情境，測出你最容易被說服的狀況。不需註冊、不收集作答。"
+    />
+    <!-- 與 src/styles/tokens.css 的 --stage-bg 同值。meta 標籤吃不到 CSS 變數，
+         也不在 tokens.test.js 的掃描範圍（它只掃 src/），所以只能靠兩邊交叉註明。 -->
+    <meta name="theme-color" content="#e8e6e3" />
+
+    <!-- 分享預覽。整個產品的擴散靠結果頁的「分享我的型態」，而分享出去的是站台網址；
+         少了這幾行，貼進通訊軟體只會出現一行裸網址，沒有預覽卡。
+         og:url 與 og:image 一律寫絕對網址——相對路徑在多數平台的爬蟲上取不到。
+         網域字串與 src/data/copy.js 的 SITE_ORIGIN 必須一致，由 src/meta.test.js 守。
+         twitter:image:alt 明寫一份，不賭 OG 的退路：官方文件沒有明確保證 image:alt 會沿用
+         og:image:alt，而 title／description／image 那三個有。
+         （2026-09-09 查證時官方 card 文件取不到：developer.x.com 回 402、
+         developer.twitter.com 轉到 docs.x.com；二手來源說法也不一致。） -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="反詐騙意識演練" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:title" content="你的防詐人格是哪一型？" />
+    <meta property="og:description" content="十個取自真實案例的詐騙情境，測出你最容易被說服的狀況。不需註冊、不收集作答。" />
+    <meta property="og:url" content="https://social.feifei.tw/" />
+    <meta property="og:image" content="https://social.feifei.tw/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="四型的抽象圖形，配上標題「你的防詐人格是哪一型？」" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="你的防詐人格是哪一型？" />
+    <meta name="twitter:description" content="十個取自真實案例的詐騙情境，測出你最容易被說服的狀況。不需註冊、不收集作答。" />
+    <meta name="twitter:image" content="https://social.feifei.tw/og.png" />
+    <meta name="twitter:image:alt" content="四型的抽象圖形，配上標題「你的防詐人格是哪一型？」" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>你的防詐人格是哪一型？</title>
+    <script type="module" crossorigin src="/assets/index-Bpgll3_d.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-FCMfWkC2.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
